@@ -1,0 +1,115 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "payload": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "country": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "drm": {
+            "type": "boolean"
+          },
+          "episodeCount": {
+            "type": "integer"
+          },
+          "genre": {
+            "type": "string"
+          },
+          "image": {
+            "type": "object",
+            "properties": {
+              "showImage": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "showImage"
+            ]
+          },
+          "language": {
+            "type": "string"
+          },
+          "nextEpisode": {
+            "type": "object",
+            "properties": {
+              "channel": {
+                "type": "null"
+              },
+              "channelLogo": {
+                "type": "string"
+              },
+              "date": {
+                "type": "null"
+              },
+              "html": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "channel",
+              "channelLogo",
+              "date",
+              "html",
+              "url"
+            ]
+          },
+          "primaryColour": {
+            "type": "string"
+          },
+          "seasons": {
+            "type": "null"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "tvChannel": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "country",
+          "description",
+          "drm",
+          "episodeCount",
+          "genre",
+          "image",
+          "language",
+          "nextEpisode",
+          "primaryColour",
+          "seasons",
+          "slug",
+          "title",
+          "tvChannel"
+        ]
+      }
+    },
+    "skip": {
+      "type": "integer"
+    },
+    "take": {
+      "type": "integer"
+    },
+    "totalRecords": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "payload",
+    "skip",
+    "take",
+    "totalRecords"
+  ]
+}
